@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_2022", "AoC_2022\AoC_2022.csproj", "{0367945E-6BDD-48F0-A507-AF3CBF23322D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_2022_Tests", "AoC_2022_Tests\AoC_2022_Tests.csproj", "{A22CCB49-A926-4B3D-9ABD-99914C9E888C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0367945E-6BDD-48F0-A507-AF3CBF23322D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0367945E-6BDD-48F0-A507-AF3CBF23322D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0367945E-6BDD-48F0-A507-AF3CBF23322D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0367945E-6BDD-48F0-A507-AF3CBF23322D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22CCB49-A926-4B3D-9ABD-99914C9E888C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22CCB49-A926-4B3D-9ABD-99914C9E888C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22CCB49-A926-4B3D-9ABD-99914C9E888C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22CCB49-A926-4B3D-9ABD-99914C9E888C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
