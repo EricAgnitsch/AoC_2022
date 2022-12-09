@@ -4,25 +4,17 @@ using FluentAssertions;
 
 namespace AoC_2022_Tests;
 
-public class Day09Tests : AocTestRunner
+public class Day09Tests : AocTestRunner<Day09>
 {
-    public Day09Tests() : base("09")
-    {
-    }
-
     [Test]
     public void PartOneTest()
     {
-        var solver = new Day09();
-        
-        solver.PartOne(Lines).Should().Be(13);
+        Solver.PartOne(Lines).Should().Be(13);
     }
 
     [Test]
     public void PartTwoTest()
     {
-        var solver = new Day09();
-        
-        solver.PartTwo(Lines).Should().Be(1);
+        Solver.PartTwo(Lines).Should().Be(1);
     }
 }
