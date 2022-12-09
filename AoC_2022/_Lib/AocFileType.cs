@@ -2,6 +2,6 @@
 
 public enum AocFileType
 {
-    EXAMPLE,
-    REAL
+    Example,
+    Real
 }

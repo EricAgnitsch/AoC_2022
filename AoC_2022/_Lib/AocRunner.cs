@@ -18,7 +18,7 @@ public class AocRunner
     private static string GetFileName(string day, AocFileType fileType)
     {
         return Environment.CurrentDirectory +
-               $"/Data/{day}/{(fileType == AocFileType.EXAMPLE ? "example" : "real")}.txt";
+               $"/Data/{day}/{(fileType == AocFileType.Example ? "example" : "real")}.txt";
     }
 
     public AocRunner RunPartOne()
