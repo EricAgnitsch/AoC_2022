@@ -14,4 +14,8 @@
         </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Autom8.Lib" Version="1.0.3-alpha" />
+    </ItemGroup>
+
 </Project>
