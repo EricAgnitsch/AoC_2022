@@ -25,4 +25,4 @@ jobs:
 
       - name: Test Lib
         run: |
-          dotnet test Autom8.Lib.Tests/Autom8.Lib.Tests.csproj
+          dotnet test AoC_2022_Tests/AoC_2022_Tests.csproj
