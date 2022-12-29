@@ -15,6 +15,6 @@ public class Day12Tests : AocTestRunner<Day12>
     [Test]
     public void PartTwoTest()
     {
-        Solver.PartTwo(Lines).Should().Be(20);
+        Solver.PartTwo(Lines).Should().Be(29);
     }
 }
