@@ -18,12 +18,7 @@ jobs:
           source-url: https://nuget.pkg.github.com/EricAgnitsch/index.json
         env:
           NUGET_AUTH_TOKEN: ${{secrets.GH_PACKAGE_PAT}}
-      
-      # https://samlearnsazure.blog/2021/08/08/consuming-a-nuget-package-from-github-packages/
-      - name: Install Aoc Dependencies
-        run: |
-          dotnet restore
 
-      - name: Test Aoc
+      - name: Run Tests
         run: |
           dotnet test AoC_2022_Tests/AoC_2022_Tests.csproj
