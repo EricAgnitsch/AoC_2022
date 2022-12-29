@@ -1,0 +1,24 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      # https://stackoverflow.com/a/58025355/14189385
+      - name: Setup .NET Core @ Latest
+        uses: actions/setup-dotnet@v3.0.3
+        with:
+          source-url: https://nuget.pkg.github.com/EricAgnitsch/index.json
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GH_PACKAGE_PAT}}
+
+      - name: Run Tests
+        run: |
+          dotnet test AoC_2022_Tests/AoC_2022_Tests.csproj

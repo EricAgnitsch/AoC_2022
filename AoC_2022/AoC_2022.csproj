@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Autom8.Lib" Version="1.0.4-alpha" />
+      <PackageReference Include="Autom8.Lib" Version="1.0.17" />
     </ItemGroup>
 
 </Project>
