@@ -1,0 +1,28 @@
+name: Publish to GitHub Packages
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      # https://stackoverflow.com/a/58025355/14189385
+      - name: Setup .NET Core @ Latest
+        uses: actions/setup-dotnet@v3.0.3
+        with:
+          source-url: https://nuget.pkg.github.com/EricAgnitsch/index.json
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GH_PACKAGE_PAT}}
+
+      - name: Install Lib Dependencies
+        run: |
+          dotnet restore
+
+      - name: Test Lib
+        run: |
+          dotnet test Autom8.Lib.Tests/Autom8.Lib.Tests.csproj
