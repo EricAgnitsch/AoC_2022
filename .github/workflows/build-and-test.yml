@@ -1,4 +1,4 @@
-name: Publish to GitHub Packages
+name: Build and Test
 
 on:
   pull_request:
@@ -18,11 +18,12 @@ jobs:
           source-url: https://nuget.pkg.github.com/EricAgnitsch/index.json
         env:
           NUGET_AUTH_TOKEN: ${{secrets.GH_PACKAGE_PAT}}
-
-      - name: Install Lib Dependencies
+      
+      # https://samlearnsazure.blog/2021/08/08/consuming-a-nuget-package-from-github-packages/
+      - name: Install Aoc Dependencies
         run: |
           dotnet restore
 
-      - name: Test Lib
+      - name: Test Aoc
         run: |
           dotnet test AoC_2022_Tests/AoC_2022_Tests.csproj
